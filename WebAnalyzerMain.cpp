@@ -63,7 +63,7 @@ public:
             
             ifstream file(curr);
             if (!file.is_open()) {
-                cerr << "Warning: cannot open " << curr << " — treating as dangling (no outgoing links)\n";
+                cerr << "Warning: cannot open " << curr << " â€” treating as dangling (no outgoing links)\n";
                 continue;
             }
 
@@ -206,7 +206,7 @@ public:
         }
 
         if (static_cast<int>(topoOrder.size()) != k) {
-            cerr << "Warning: topological sort on condensed graph did not include all components — cycle detected (unexpected)\n";
+            cerr << "Warning: topological sort on condensed graph did not include all components â€” cycle detected (unexpected)\n";
             return {};
         }
 
